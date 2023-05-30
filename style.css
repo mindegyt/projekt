@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -35,4 +35,9 @@ h1 {
     padding: 20px;
     background-color: #333;
     color: #fff;
+}
+
+#elso{
+    text-align: center;
+    color: black;
 }
