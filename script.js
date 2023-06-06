@@ -8,12 +8,12 @@ function kiir() {
     .then((response) => response.json())
     .then((data) => {
       const rates = data.rates;
-      document.getElementById("eur").textContent = rates.eur.value + " EUR";
-      document.getElementById("usd").textContent = rates.usd.value + " USD";
-      document.getElementById("gbp").textContent = rates.gbp.value + " GBP";
-      document.getElementById("chf").textContent = rates.chf.value + " CHF";
-      document.getElementById("pln").textContent = rates.pln.value + " PLN";
-      document.getElementById("huf").textContent = rates.huf.value + " HUF";
+      document.getElementById("eur").textContent = rates.eur.value.toFixed(2) + " EUR";
+      document.getElementById("usd").textContent = rates.usd.value.toFixed(2) + " USD";
+      document.getElementById("gbp").textContent = rates.gbp.value.toFixed(2) + " GBP";
+      document.getElementById("chf").textContent = rates.chf.value.toFixed(2) + " CHF";
+      document.getElementById("pln").textContent = rates.pln.value.toFixed(2) + " PLN";
+      document.getElementById("huf").textContent = rates.huf.value.toFixed(2) + " HUF";
 
     });
 }
